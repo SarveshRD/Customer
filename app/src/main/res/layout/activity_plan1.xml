@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Plan1"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_plan"
+        android:text="Next"
+        ></Button>
+
+    <Button
+        android:id="@+id/btn_plan2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check Your Both Plan Dates"
+        android:textSize="25sp"
+        android:textColor="@color/quantum_black_100"></Button>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        android:textSize="25sp"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/time2"
+        android:textSize="25sp"></TextView>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			   xmlns:app="http://schemas.android.com/apk/res-auto"
+			   xmlns:tools="http://schemas.android.com/tools"
+			   android:layout_width="fill_parent"
+			   android:layout_height="fill_parent"
+			   android:orientation="vertical"
+			   tools:context=".CustomerMapsActivity">
+
+
+	<fragment
+		android:id="@+id/customer_map_container"
+		android:name="com.google.android.gms.maps.SupportMapFragment"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context=".MapsActivity"
+		tools:layout="@layout/abc_list_menu_item_radio">
+
+		<ProgressBar
+			style="?android:attr/progressBarStyle"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:visibility="gone"
+			android:id="@+id/progressBar_cut_act"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="top"
+			android:orientation="vertical">
+
+
+			<EditText
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/edit_text"
+				android:hint="Enter address"
+				android:padding="16dp"
+				android:drawablePadding="16dp"
+				android:drawableLeft="@drawable/ic_location"
+				android:gravity="center_vertical"
+				android:background="@android:drawable/editbox_background"
+				/>
+
+			<TextView
+				android:id="@+id/text_view2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="#FF3D00"
+				android:ellipsize="end"
+				android:gravity="top"
+				android:maxLines="1"
+				android:padding="12dp"
+				android:text="@string/mapAddress"
+				android:textColor="@color/whiteTextColor"
+				android:textSize="12sp"
+				android:textStyle="bold" />
+
+		</LinearLayout>
+
+
+			<ImageView
+				android:layout_width="70dp"
+				android:layout_height="50dp"
+				android:layout_gravity="center"
+				android:layout_marginBottom="20dp"
+				android:src="@drawable/ic_marker"
+				android:layout_centerInParent="true"
+				android:layout_centerHorizontal="true"/>
+
+
+		<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom">
+
+			<Button
+				android:id="@+id/save_data"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/button_border"
+				android:text="@string/SaveLocation"
+				android:layout_centerHorizontal="true"
+				android:textColor="#CAFF00"
+				android:layout_gravity="center_horizontal"/>
+
+		</FrameLayout>
+
+	</fragment>
+
+</RelativeLayout>
